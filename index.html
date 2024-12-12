@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/f0b3daec57.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&display=swap" rel="stylesheet">
+    <!--importation police PTsans FRED-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Tiny5&display=swap"
+        rel="stylesheet">
+        <title>La bataille</title>
+    
+</head>
+
+
+<body>
+    <h1 class="text-center  fw-bold">Jeu de la Bataille</h1>
+    <main class=" text-light w-75 m-auto">
+        <div id="ordinateurboard" class="gap-5 d-flex justify-content-start p-2 inline-block">
+            <div id="ordinateurdos"><img class="taillecarte" src="img/backcartebleuegrande.png"></div>
+            <div id="ordinateurcarte"><img class="taillecarte" src="img/backcartebleuegrande.png"></div>
+            <div class="" id="scoreordinateur">
+                <ul id="computerInfo" class="info-list">
+                    <li id="computerVictory" class="fw-bold py-3">Ordinateur<img src=""></li>
+                    <li>Score : <span id="scorevaleurordinateur">0</span></li>
+                    <li>Nombre de Cartes : <span id="nombrecarteordinateur">0</span></li>
+                    <li id="computerBataille"></li>
+                </ul>
+            </div>
+        </div>
+        <div id="joueurboard" class="gap-5 d-flex justify-content-start p-2 inline-block">
+            <div id="joueurdos"><img class="taillecarte" src="img/backcartegrande.png"></div>
+            <div id="joueurcarte"><img class="taillecarte" src="img/backcartegrande.png"></div>
+            <div class="" id="scorejoueur">
+                <ul id="playerInfo" class="info-list">
+                    <li id="playerVictory" class="fw-bold py-3 ">Joueur <img src=""></li>
+                    <li>Score : <span id="scorevaleurjoueur">0</span></li>
+                    <li>Nombre de Cartes : <span id="nombrecartejoueur">0</span></li>
+                    <li id="playerBataille"></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+
+    <div id="namePrompt" class="modal" style="display:none;">
+        <div class="modal-content">
+            <h2>Entrez votre nom</h2>
+            <input type="text" id="playerNameInput" placeholder="Votre nom">
+            <button id="startGameBtn">Commencer</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
